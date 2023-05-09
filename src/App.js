@@ -1,9 +1,21 @@
 import React from 'react';
+import citroenen from './assets/citroenen.jpeg';
+import limoenen from './assets/limoenen.png';
+import ijsblokjes from './assets/ijsblokjes.jpg';
+import {ReactComponent as ShoppingCart} from './assets/winkelmandje.svg';
 import './App.css';
 
 function App() {
     return (
         <>
+            <nav>
+                <ul>
+                    <li><a href="/">Shop</a></li>
+                    <li><a href="/">Ons verhaal</a></li>
+                    <li><a href="/">Blog</a></li>
+                </ul>
+                <ShoppingCart className="shopping-cart-icon"/>
+            </nav>
             <header>
                 <h1>Fruit Perfection</h1>
                 <button type="button">Shop nu</button>
@@ -11,8 +23,8 @@ function App() {
             <main>
                 <article className="product">
                     <img
-                        src="https://i0.wp.com/www.fruitvervisch.be/wp-content/uploads/2020/06/fruit-vervisch-550013404.jpg?fit=2400%2C1650&ssl=1"
-                        alt="foto van citroen"/>
+                        src={citroenen}
+                        alt="foto van citroenen"/>
                     <h2 className="product-name">Citroen</h2>
                     <p className="product-description">"Een citroen is voor de meeste mensen te zuur om zo uit de hand
                         te
@@ -22,8 +34,8 @@ function App() {
                 </article>
                 <article className="product">
                     <img
-                        src="https://i0.wp.com/www.fruitvervisch.be/wp-content/uploads/2020/06/fruit-vervisch-550013404.jpg?fit=2400%2C1650&ssl=1"
-                        alt="foto van citroen"
+                        src={limoenen}
+                        alt="foto van limoenen"
                     />
                     <h2 className="product-name">Limoen</h2>
                     <p className="product-description">Limoen is familie van de citroen en de sinaasappel en behoort tot
@@ -34,8 +46,8 @@ function App() {
                 </article>
                 <article className="product">
                     <img
-                        src="https://i0.wp.com/www.fruitvervisch.be/wp-content/uploads/2020/06/fruit-vervisch-550013404.jpg?fit=2400%2C1650&ssl=1"
-                        alt="foto van citroen"
+                        src={ijsblokjes}
+                        alt="foto van ijsblokjes"
                     />
                     <h2 className="product-name">Ijsblokjes</h2>
                     <p className="product-description">Een ijsblokje of ijsklontje is bevroren water in de vorm van een
